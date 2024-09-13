@@ -88,9 +88,13 @@ public class Course implements Serializable {
     this.courseTimeSlot = newTime;
   }
 
-
+  /**
+   * Set the enrolled student count (keeping enrollment capacity in mind).
+   */
   public void setEnrolledStudentCount(int count) {
-    this.enrolledStudentCount = count;
+    if (count <= enrollmentCapacity) {
+      this.enrolledStudentCount = count;
+    }
   }
 
 

@@ -37,6 +37,7 @@ public class CourseUnitTests {
 
   @Test
   public void enrollAndDropStudentTest() {
+    testCourse.setEnrolledStudentCount(251);
     testCourse.setEnrolledStudentCount(250);
     assertEquals(false, testCourse.enrollStudent());
 

@@ -14,6 +14,9 @@ import org.springframework.test.context.ContextConfiguration;
 @SpringBootTest
 @ContextConfiguration
 public class DepartmentUnitTests {
+  /**
+   * Set up a new test department for each test in the class.
+   */
   @BeforeEach
   public void setupDepartmentForTesting() {
     Course testCourse = new Course("Griffin Newbold", "417 IAB", "11:40-12:55", 250);

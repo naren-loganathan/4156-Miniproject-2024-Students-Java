@@ -5,3 +5,8 @@ Bugs fixed during unit testing/reading code:
  - [Course] enrollStudent - add condition to check for available space
  - [Course] dropStudent - add condition to check if a student is enrolled before dropping
  - [Course] getCourseLocation & getInstructorName - return values swapped
+
+ - [Department] getNumberOfMajors - remove negative sign
+ - [Department] getDepartmentChair - remove quotes around this.departmentChair
+ - [Department] dropPersonFromMajor - add condition to check if at least one major exists before dropping
+ - [Department] toString - remove quotes around return value

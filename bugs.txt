@@ -14,3 +14,6 @@ Bugs fixed during unit testing/reading code:
 
  - [RouteController] retrieveDepartment - swap the http statuses in the if/else block
  - [RouteController] retrieveCourse - http forbidden -> http ok
+ - [RouteController] getMajorCtFromDept - http forbidden -> http not found
+ - [RouteController] getMajorCtFromDept - remove negative sign in front of the number of majors
+ - [RouteController] findCourseTime - replace "some time" with requestedCourse.getCourseTimeSlot()

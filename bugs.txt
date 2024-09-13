@@ -1,0 +1,7 @@
+Bugs fixed during unit testing/reading code:
+
+ - [Course] Constructor - set enrolled student count to 0 instead of 500 (consistent with the javadoc)
+ - [Course] isCourseFull - fixed incorrect condition
+ - [Course] enrollStudent - add condition to check for available space
+ - [Course] dropStudent - add condition to check if a student is enrolled before dropping
+ - [Course] getCourseLocation & getInstructorName - return values swapped

@@ -1,0 +1,13 @@
+Google Java Style Guide: https://google.github.io/styleguide/javaguide.html
+
+Javadoc: https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html
+
+Unit Testing Introduction: https://aws.amazon.com/what-is/unit-testing/
+
+PMD 7.5.0 Static Code Analyzer (used quickstart tutorial on the src directory): https://pmd.github.io/
+
+SDKMAN for managing Java/Maven versions: https://sdkman.io/
+
+Helpful blog on JUnit Annotation: https://www.baeldung.com/junit-before-beforeclass-beforeeach-beforeall
+
+Jacoco blog: https://www.baeldung.com/jacoco

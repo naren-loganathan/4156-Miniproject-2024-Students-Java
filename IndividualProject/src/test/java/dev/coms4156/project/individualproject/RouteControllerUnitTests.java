@@ -3,6 +3,7 @@ package dev.coms4156.project.individualproject;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.HashMap;
+import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,7 +25,7 @@ public class RouteControllerUnitTests {
     Course coms1004 = new Course("Adam Cannon", "417 IAB", "11:40-12:55", 400);
     coms1004.setEnrolledStudentCount(249);
 
-    HashMap<String, Course> courses = new HashMap<>();
+    Map<String, Course> courses = new HashMap<>();
     courses.put("1004", coms1004);
 
     Department compSci = new Department("COMS", courses, "Luca Carloni", 2700);
@@ -32,7 +33,7 @@ public class RouteControllerUnitTests {
     mapping = new HashMap<>();
     mapping.put("COMS", compSci);
 
-    myFileDatabase = new MyFileDatabase(1, "test-db");
+    MyFileDatabase myFileDatabase = new MyFileDatabase(1, "test-db");
     myFileDatabase.setMapping(mapping);
     IndividualProjectApplication.overrideDatabase(myFileDatabase);
 
@@ -178,8 +179,7 @@ public class RouteControllerUnitTests {
         routeController.changeCourseTime("COMS", 1004, "11:40-12:55"));
   }
 
-  private HashMap<String, Department> mapping;
-  private MyFileDatabase myFileDatabase;
+  private Map<String, Department> mapping;
   private RouteController routeController;
 }
 

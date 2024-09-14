@@ -17,3 +17,27 @@ Bugs fixed during unit testing/reading code:
  - [RouteController] getMajorCtFromDept - http forbidden -> http not found
  - [RouteController] getMajorCtFromDept - remove negative sign in front of the number of majors
  - [RouteController] findCourseTime - replace "some time" with requestedCourse.getCourseTimeSlot()
+
+Fixes after running static bug finder (PMD 7.5.0 checks with rulesets/java/quickstart.xml):
+
+ - [Course] MissingOverride: Add @Override annotation to 'toString()'
+
+ - [Department] MissingOverride: Add @Override annotation to 'toString()'
+ - [Department] LooseCoupling: Use Map interface instead of the HashMap implementation type
+ - [Department] Unnecessary Import: Remove 'import HashMap'
+
+ - [IndividualProjectApplication] LiteralsFirstInComparisons: Position literals first in String comparisons
+ - [IndividualProjectApplication] LooseCoupling: Use Map interface instead of the HashMap implementation type
+
+ - [MyFileDatabase] LooseCoupling: Use Map interface instead of the HashMap implementation type
+ - [MyFileDatabase] ReturnEmptyCollectionRatherThanNull: Return an empty collection rather than null
+
+ - [RouteController] UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only element
+ - [RouteController] LooseCoupling: Use Map interface instead of the HashMap implementation type
+ - [RouteController] UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+ - [RouteController] Unnecessary Import: Remove 'import HashMap'
+
+ - [DepartmentUnitTests] LooseCoupling: Use Map interface instead of the HashMap implementation type
+
+ - [RouteControllerUnitTests] LooseCoupling: Use Map interface instead of the HashMap implementation type
+ - [RouteControllerUnitTests] SingularField: Replace 'myFileDatabase' with a local variable
